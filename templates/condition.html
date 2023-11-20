@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+     <!-- <h1>if condition</h1> 
+        {% if a < 100 %}
+        <h1>  {{a}} </h1>
+         {% endif %} -->
+
+    <!-- <h1>if else condition</h1> 
+        {% if a > b %}
+        <h1>  A is greater than B </h1>
+        {% else %}
+        <h1>  B is greater than A </h1>
+         {% endif %}  -->
+
+         <!-- <h1>if elif else condition</h1>
+         {% if a > b > c %}
+         <h1>  A is greater than B,C </h1>
+         {% elif b > c %}
+         <h1>  B is greater than A,C </h1>
+         {% else %}
+         <h1> C is greater than A,B</h1> 
+          {% endif %} -->
+ 
+        <h1>nested if else condition</h1>
+        {% if a > b %}
+            {% if a > c%}
+                <h1> A is greater than C </h1>
+            {% else %}
+                <h1> C is greater than A </h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h1> B is greater than C </h1>
+            {% else %} 
+                <h1> Cis greater than B </h1>
+            {% endif %}
+        {% endif %}
+        
+    </center>
+</body>
+</html>
